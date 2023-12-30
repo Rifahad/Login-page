@@ -1,0 +1,20 @@
+[
+  {
+    "fullName": "Rifahad",
+    "email": "rifahadmt202@gmail.com",
+    "password": "Rifahad123@",
+    "confirm_Password": "Rifahad123@"
+  },
+  {
+    "fullName": "shahaba",
+    "email": "Shahaba123@gmail.com",
+    "password": "SHAhaba123@!",
+    "confirm_Password": "SHAhaba123@!"
+  },
+  {
+    "fullName": "users",
+    "email": "User@gmail.com",
+    "password": "Rt_008mt",
+    "confirm_Password": "Rt_008mt"
+  }
+]

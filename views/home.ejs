@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>USERS DETAILS</h1>
+            <button type="button" onclick="logout()">Log Out</button>
+        </div>
+        <div class="section">
+           <table>
+            <tr>
+                <th>Name</th>
+                <th>E-mail</th>
+            </tr>
+            <% if(userData){%>
+            <% userData.forEach(element => {%>
+            <tr>
+            <td><%=element.fullName%></td>
+            <td><%=element.email%></td>
+            </tr> 
+           <% }) %>
+            <% } %>
+           </table>
+        </div>
+    </div>
+</body>
+<script>
+    function logout() {
+    location.href="/logout"
+    }
+</script>
+</html>

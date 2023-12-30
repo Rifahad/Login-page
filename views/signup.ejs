@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sign">
+            <div class="header">
+                <h1>SIGN UP</h1>
+            </div>
+            <div class="section">
+                <div class="name">
+                        <form action="/signup" class="signup" method="POST">
+                        <label for="firstName">Full Name :</label>
+                        <input type="text" name="fullName">
+                        <hr>
+                    </div>
+                    <div class="mail">
+                        <label for="mail">E-Mail :</label>  
+                        <input type="email" name="email">
+                        <br>
+                        <hr>
+                    </div>
+                    <div class="pass">
+                        <label for="pass">Password :</label>
+                        <input type="password" value="" name="password">
+                        <hr>
+                    </div>
+                    <div class="pass">
+                        <label for="pasword">Confirm Password :</label>
+                        <input type="password" value="" name=confirm_Password>
+                        <hr>
+                    </div>
+                </div>
+                    <% if(error){ %>
+                       <p><%= error  %></p> 
+                   <% } %>
+                <div class="end">
+                    <button type="submit">SIGN UP</button>
+                </div>
+                <p class="validEmail"></p>
+                <p class="validPassword"></p>
+                <p class="validConfirm"></p>
+
+            </div>
+            <div class="clock">
+                <div class="clock-face">
+                    <div class="hand hour-hand"></div>
+                    <div class="hand minute-hand"></div>
+                    <div class="hand second-hand"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="js/clock.js"></script>
+    <script src="js/signup.js"></script>
+
+</body>
+</html>
